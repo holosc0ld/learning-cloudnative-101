@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: nodejs
+  labels:
+    app: nodejs-api-selector
+spec:
+  rules:
+    - host: nodejs.$DOMAIN
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: nodejs-api-service
+              servicePort: 8080
