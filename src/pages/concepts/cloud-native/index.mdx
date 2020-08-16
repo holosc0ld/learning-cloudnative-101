@@ -49,8 +49,8 @@ manageable, and observable. Combined with robust automation, they allow
 engineers to make high-impact changes frequently and predictably with
 minimal toil.
 
-The Cloud Native Computing Foundation seeks to drive adoption of this
-paradigm by fostering and sustaining an ecosystem of open source,
+The Cloud Native Computing Foundation (CNCF) seeks to drive adoption of
+this paradigm by fostering and sustaining an ecosystem of open source,
 vendor-neutral projects. We democratize state-of-the-art patterns to
 make these innovations accessible for everyone.
 
@@ -264,11 +264,11 @@ In a traditional set up, many organizations have teams based on skill
 set like backend, user interface, database, operations etc. Such a
 structure will not allow you to build cloud native systems.
 
-In cloud native systems, the system is composed of bounded isolated
-components. They have their own resources. Each of such component must
-be owned by self-sufficient, full stack team. That team is entirely
+In cloud native systems, the system is composed of bounded, isolated
+components. They have their own resources. Each component must
+be owned by a self-sufficient, full stack team. That team is entirely
 responsible for all the resources that belong to that particular
-component. In this set up, team tends to build quality up front in as
+component. In this set up, a team tends to build quality in up front as
 they are the ones who deploy it and they will be taking care of it if
 the component is broken. It is more like you build it and then you run
 it. So, the team can continuously deliver advancements to the components
@@ -283,11 +283,10 @@ Compared to the traditional systems, there will be lots of things we do
 differently in cloud-native systems.
 
 To make that happen, cultural change is really important. To change the
-thinking at high level, we just to first prove that the low level
+thinking at a high level, we have to first prove that the low level
 practices can truly deliver and encourage lean thinking. With this
 practice, you can conduct experimentation. Based on the feedback from
-business, you can quickly and safely deliver your applications that can
-scale.
+business, you can quickly and safely deliver scalable applications.
 
 ## Cloud-native Roadmap
 
@@ -308,7 +307,7 @@ distribution based on your requirements.
 
 ![CNCF\_TrailMap\_latest.png](./images/CNCF_TrailMap_latest.png)
 
--   With out Containerization, you cannot build cloud native
+-   Without Containerization, you cannot build cloud native
     applications. This helps your application to run in any computing
     environment. Basically, all your code and dependencies are packaged
     up together in to a single unit here. Among different container
@@ -322,8 +321,9 @@ distribution based on your requirements.
     the container lifecycles. Currently, Kubernetes is one solution
     which is popular.
 
--   Monitoring and Observability plays a very important role. It is good
-    to set up some of them like logging, tracing, metrics etc.
+-   Monitoring and Observability play very important roles. Establish
+    standard logging practices and standard events to get the widest
+    coverage and clearest visibility.
 
 -   To enable more complex operational requirements, you can use a
     service mesh. It helps you out with several things like service
